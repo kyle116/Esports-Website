@@ -95,7 +95,6 @@ so line height needs to equal outer div height(300px)*/
 
 
 /* Middle About Section */
-
 .mid {
   height: 500px;
   background-color:  #1a1a1a;
@@ -118,7 +117,6 @@ so line height needs to equal outer div height(300px)*/
   height: 500px;
   width: 33.26%;
   text-align: center;
-  border-right: black solid 1px;
   color: white;
   font-family: 'Roboto', sans-serif;
   font-size: 24px;
@@ -133,11 +131,13 @@ so line height needs to equal outer div height(300px)*/
 }
 
 /* Game Image Fade In */
-.tab-games {
-  /*position: absolute;
-  top: 0px;
-  left: 50%;
-  margin: auto;*/
+.tab-games span {
+  position: relative;
+  top: 50%;
+  left: inherit;
+  z-index: 1;
+  margin: auto;
+  vertical-align: middle;
 }
 
 .tab-games img {
@@ -146,10 +146,10 @@ so line height needs to equal outer div height(300px)*/
   top: inherit;
   -webkit-animation-name: fade;
   -webkit-animation-iteration-count: infinite;
-  -webkit-animation-duration: 24s;
+  -webkit-animation-duration: 30s;
   animation-name: fade;
   animation-iteration-count: infinite;
-  animation-duration: 24s;
+  animation-duration: 30s;
 }
 
 @-webkit-keyframes fade {
@@ -167,13 +167,19 @@ so line height needs to equal outer div height(300px)*/
   100% {opacity: 0;}
 }
 
-#img1, #img2, #img3 {
+#img1, #img2, #img3, #img4, #img5 {
   width: inherit;
   height: inherit;
 }
 #img2 {
-  -webkit-animation-delay: -16s;
+  -webkit-animation-delay: -24s;
 }
 #img3 {
-  -webkit-animation-delay: -8s;
+  -webkit-animation-delay: -18s;
+}
+#img4 {
+  -webkit-animation-delay: -12s;
+}
+#img5 {
+  -webkit-animation-delay: -6s;
 }
