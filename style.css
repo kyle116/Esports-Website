@@ -2,6 +2,27 @@ body {
   margin: 0px;
 }
 
+/* Nav Bar */
+nav {
+  position: fixed;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  list-style: none;
+  font-size: 24px;
+  display: inline;
+}
+
+a {
+  color: white;
+}
+
+/* Home Page Intro */
 header {
   background-size: 100% 100%;
   background: url('https://image.redbull.com/rbcom/010/2015-12-02/1331763041375_1/0010/1/1500/1000/1/does-esports-need-a-players%E2%80%99-union.jpg');
@@ -10,15 +31,6 @@ header {
   background-size: cover;
   height: 100%;
   padding: 15% 0;
-}
-
-nav {
-  position: fixed;
-  height: 60px;
-  background: rgba(0, 0, 0, 0.5);
-  overflow: hidden;
-  top: 0;
-  width: 100%;
 }
 
 .intro {
@@ -44,16 +56,7 @@ so line height needs to equal outer div height(300px)*/
   height: inherit;
 }
 
-li {
-  list-style: none;
-  font-size: 24px;
-  display: inline;
-}
-
-a {
-  color: white;
-}
-
+/* Middle About Section */
 .mid {
   height: 500px;
   background-color: black;
@@ -74,4 +77,50 @@ a {
   width: 33%;
   text-align: center;
   border-right: black solid 1px;
+}
+
+/* Game Image Fade In */
+.fadein {
+    position:absolute;
+    top:0px;
+    left:50%;
+    margin:auto;
+}
+.fadein img {
+    position:absolute;
+    left:-65px;
+    top:0;
+    -webkit-animation-name: fade;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 6s;
+    animation-name: fade;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+}
+
+@-webkit-keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}
+@keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+#f1 {
+    background-color: lightblue;
+}
+#f2 {
+    -webkit-animation-delay: -4s;
+    background-color: yellow;
+}
+#f3 {
+    -webkit-animation-delay: -2s;
+    background-color: lightgreen;
 }
