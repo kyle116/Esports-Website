@@ -34,6 +34,8 @@ header {
   padding: 15% 0;
 }
 
+/* NavBar */
+
 nav {
   position: fixed;
   height: 60px;
@@ -113,13 +115,12 @@ so line height needs to equal outer div height(300px)*/
 }
 
 /* Bottom Section */
-.tab-games, .tab-events, .tab-profiles {
+.tab-games, .tab-events, .tab-teams {
   float: left;
   height: 500px;
   width: 33.26%;
   text-align: center;
-  border-right: black solid 1px;
-  color: white;
+  color: black;
   font-family: 'Roboto', sans-serif;
   font-size: 24px;
 }
@@ -133,23 +134,29 @@ so line height needs to equal outer div height(300px)*/
 }
 
 /* Game Image Fade In */
-.tab-games {
-  /*position: absolute;
-  top: 0px;
-  left: 50%;
-  margin: auto;*/
+.tab-games span, .tab-teams span {
+  position: relative;
+  top: inherit;
+  left: 66%;
+  z-index: 1;
+  margin: auto;
 }
 
-.tab-games img {
+.tab-games img, .tab-teams img {
   position: absolute;
   left: 0;
+  width: 33%;
   top: inherit;
   -webkit-animation-name: fade;
   -webkit-animation-iteration-count: infinite;
-  -webkit-animation-duration: 24s;
+  -webkit-animation-duration: 30s;
   animation-name: fade;
   animation-iteration-count: infinite;
-  animation-duration: 24s;
+  animation-duration: 12s;
+}
+
+.tab-teams img{
+  left: 66.6%;
 }
 
 @-webkit-keyframes fade {
@@ -167,13 +174,9 @@ so line height needs to equal outer div height(300px)*/
   100% {opacity: 0;}
 }
 
-#img1, #img2, #img3 {
-  width: inherit;
-  height: inherit;
-}
-#img2 {
+#img2, #img5 {
   -webkit-animation-delay: -16s;
 }
-#img3 {
+#img3, #img6 {
   -webkit-animation-delay: -8s;
 }
