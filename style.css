@@ -20,7 +20,34 @@ nav {
   overflow: hidden;
   top: 0;
   width: 100%;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
 }
+
+nav ul{
+  list-style-type: none;
+  width: auto;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  list-style: none;
+  font-size: 16px;
+  margin-right: 3%;
+  margin-top: .5%;
+}
+
+nav a {
+  color: white;
+  padding-top: 2%;
+  text-decoration: none;
+}
+
+nav a:hover{
+  border-bottom: 1px solid white;
+}
+
 
 .intro {
   margin: auto;
@@ -36,6 +63,7 @@ so line height needs to equal outer div height(300px)*/
 .intro span {
   color: white;
   font-size: 3em;
+  font-family: 'Roboto', sans-serif;
   width: 100%;
   display: block;
   margin: auto;
@@ -45,21 +73,13 @@ so line height needs to equal outer div height(300px)*/
   height: inherit;
 }
 
-li {
-  list-style: none;
-  font-size: 24px;
-  display: inline;
-}
-
-a {
-  color: white;
-  padding-top: 2%;
-}
 
 .mid {
   height: 500px;
-  background-color: black;
+  background-color:  #1a1a1a;
   color: white;
+  font-family: 'Roboto', sans-serif;
+
 }
 
 .mid span {
@@ -73,7 +93,18 @@ a {
 .tab-games, .tab-events, .tab-profiles {
   float: left;
   height: 500px;
-  width: 33%;
+  width: 33.26%;
   text-align: center;
   border-right: black solid 1px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+}
+
+.tab-events{
+  background-image: url('https://i.imgur.com/7AIJSaS.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
 }
