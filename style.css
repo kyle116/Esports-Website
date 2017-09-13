@@ -71,6 +71,7 @@ so line height needs to equal outer div height(300px)*/
   font-size: 25px;
 }
 
+/* Bottom Section */
 .tab-games, .tab-events, .tab-profiles {
   float: left;
   height: 500px;
@@ -80,47 +81,47 @@ so line height needs to equal outer div height(300px)*/
 }
 
 /* Game Image Fade In */
-.fadein {
-    position:absolute;
-    top:0px;
-    left:50%;
-    margin:auto;
+.tab-games {
+  /*position: absolute;
+  top: 0px;
+  left: 50%;
+  margin: auto;*/
 }
-.fadein img {
-    position:absolute;
-    left:-65px;
-    top:0;
-    -webkit-animation-name: fade;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-duration: 6s;
-    animation-name: fade;
-    animation-iteration-count: infinite;
-    animation-duration: 6s;
+
+.tab-games img {
+  position: absolute;
+  left: 0;
+  top: inherit;
+  -webkit-animation-name: fade;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 24s;
+  animation-name: fade;
+  animation-iteration-count: infinite;
+  animation-duration: 24s;
 }
 
 @-webkit-keyframes fade {
-    0% {opacity: 0;}
-    20% {opacity: 1;}
-    33% {opacity: 1;}
-    53% {opacity: 0;}
-    100% {opacity: 0;}
+  0% {opacity: 0;}
+  20% {opacity: 1;}
+  33% {opacity: 1;}
+  53% {opacity: 0;}
+  100% {opacity: 0;}
 }
 @keyframes fade {
-    0% {opacity: 0;}
-    20% {opacity: 1;}
-    33% {opacity: 1;}
-    53% {opacity: 0;}
-    100% {opacity: 0;}
+  0% {opacity: 0;}
+  20% {opacity: 1;}
+  33% {opacity: 1;}
+  53% {opacity: 0;}
+  100% {opacity: 0;}
 }
 
-#f1 {
-    background-color: lightblue;
+#img1, #img2, #img3 {
+  width: inherit;
+  height: inherit;
 }
-#f2 {
-    -webkit-animation-delay: -4s;
-    background-color: yellow;
+#img2 {
+  -webkit-animation-delay: -16s;
 }
-#f3 {
-    -webkit-animation-delay: -2s;
-    background-color: lightgreen;
+#img3 {
+  -webkit-animation-delay: -8s;
 }
