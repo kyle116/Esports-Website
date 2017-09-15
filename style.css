@@ -3,26 +3,6 @@ body {
   margin-top: -1.1%;
 }
 
-/* Nav Bar */
-nav {
-  position: fixed;
-  height: 60px;
-  background: rgba(0, 0, 0, 0.5);
-  overflow: hidden;
-  top: 0;
-  width: 100%;
-}
-
-li {
-  list-style: none;
-  font-size: 24px;
-  display: inline;
-}
-
-a {
-  color: white;
-}
-
 /* Home Page Intro */
 header {
   background-size: 100% 100%;
@@ -35,7 +15,6 @@ header {
 }
 
 /* NavBar */
-
 nav {
   position: fixed;
   height: 60px;
@@ -102,19 +81,19 @@ so line height needs to equal outer div height(300px)*/
   background-color:  #1a1a1a;
   color: white;
   font-family: 'Roboto', sans-serif;
-
 }
 
 .mid span {
   position: relative;
-  top: 50%;
+  top: 25%;
   display: block;
   text-align: center;
   font-size: 25px;
+  margin: 0 auto;
 }
 
-/* Bottom Section */
 
+/* Bottom Section */
 .tabs{
   display: flex;
   flex-direction: row;
