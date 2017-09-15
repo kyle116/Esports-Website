@@ -114,14 +114,25 @@ so line height needs to equal outer div height(300px)*/
 }
 
 /* Bottom Section */
+
+.tabs{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
 .tab-games, .tab-events, .tab-teams {
-  float: left;
   height: 500px;
-  width: 33.26%;
   text-align: center;
   color: black;
   font-family: 'Roboto', sans-serif;
   font-size: 24px;
+
+  flex-grow: 1;
+  flex-basis: 33.26%;
+  align-self: center;
 }
 
 .tab-events{
@@ -129,7 +140,6 @@ so line height needs to equal outer div height(300px)*/
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-
 }
 
 /* Game Image Fade In */
@@ -178,4 +188,15 @@ so line height needs to equal outer div height(300px)*/
 }
 #img3, #img6 {
   -webkit-animation-delay: -8s;
+}
+
+
+/*MOBILE*/
+
+@media only screen and (max-width: 500px) {
+  .tabs{
+    display: block;
+    width: 100%;
+    height:auto;
+  }
 }
